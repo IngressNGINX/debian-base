@@ -26,7 +26,7 @@ ALL_ARCH = amd64 arm arm64 ppc64le s390x
 TEMP_DIR := $(shell mktemp -d)
 TAR_FILE ?= rootfs.tar
 
-QEMUVERSION = v2.12.0
+QEMUVERSION = v4.1.0-1
 
 ifeq ($(ARCH),amd64)
 	BASEIMAGE?=debian:buster
