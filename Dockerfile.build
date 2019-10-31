@@ -63,9 +63,6 @@ RUN echo "Yes, do as I say!" | apt-get purge \
     libcap2 \
     tzdata
 
-RUN echo "Yes, do as I say!" | apt-get purge \
-    init-system-helpers
-
 # No-op stubs replace some unnecessary binaries that may be depended on in the install process (in
 # particular we don't run an init process).
 WORKDIR /usr/local/bin
